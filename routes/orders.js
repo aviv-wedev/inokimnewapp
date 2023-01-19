@@ -53,8 +53,8 @@ async function submitOrder(order) {
 		address: order.billing_address.address1,
 		City: order.billing_address.city,
 		zip: order.billing_address.zip,
-		state: order.billing_address.province_code || "",
-		phone: order.billing_address.phone || "",
+		state: order.billing_address.province_code,
+		phone: order.billing_address.phone,
 		items: lineItems,
 	};
 
