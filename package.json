@@ -1,0 +1,25 @@
+{
+  "name": "inokimnewapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shopify/shopify-api": "^5.2.0",
+    "axios": "^1.2.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.0",
+    "verify-shopify-webhook": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
