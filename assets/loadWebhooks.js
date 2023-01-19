@@ -17,7 +17,7 @@ async function initiateWebhooks() {
 	console.log(webhooks);
 
 	for (const topic of availableTopics) {
-		const url = /*`https://bgate.inokim.org*/`https://07b4-77-137-78-229.eu.ngrok.io/api/${topic.split('/')[0]}/${topic.split('/')[1]}`;
+		const url = `https://bgate.inokim.org/api/${topic.split('/')[0]}/${topic.split('/')[1]}`;
 		const existingWebhook = webhooks.find((webhook) => webhook.topic == topic && webhook.address == url);
 
 		if (!existingWebhook) {
